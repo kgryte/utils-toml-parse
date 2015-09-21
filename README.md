@@ -49,11 +49,8 @@ var fs = require( 'fs' ),
 	parse = require( 'utils-toml-parse' );
 
 // Load a TOML file...
-var filepath,
-	file;
-
-filepath = '/path/to/file.toml';
-file = fs.readFileSync( filepath, {
+var file = '/path/to/file.toml';
+file = fs.readFileSync( file, {
 	'encoding': 'utf8'
 });
 

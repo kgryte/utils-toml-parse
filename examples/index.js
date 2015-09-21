@@ -5,11 +5,8 @@ var fs = require( 'fs' ),
 	parse = require( './../lib' );
 
 // Load a TOML file...
-var filepath,
-	file;
-
-filepath = path.resolve( __dirname, '../test/fixtures/config.toml' );
-file = fs.readFileSync( filepath, {
+var file = path.resolve( __dirname, '../test/fixtures/config.toml' );
+file = fs.readFileSync( file, {
 	'encoding': 'utf8'
 });
 
